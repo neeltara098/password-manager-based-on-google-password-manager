@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+}
+body{
+    background-color:hsl(220, 28%, 17%)
+}
+.webname{
+    display: flex;
+}
+.appName{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.header{
+    display: flex;
+    /* border: 1px solid; */
+    padding: .5rem 0 ;
+    background-color:hsl(220, 28%, 17%);
+
+    color: white;
+
+}
+.searchContainer{
+    display: flex;
+    flex-grow: 1;
+}
+.searchInput{
+    padding: .5rem;
+    outline: none;
+    width: 40rem;
+    margin-left: 6.5rem;
+    /* border: none; */
+    border-radius: 5px;
+    background-color: #374151;
+    color: aliceblue;
+}
+.colorChanged{
+     border: 2px solid cornflowerblue; 
+}
+.searchInput::placeholder{
+    color: aliceblue;
+    opacity: .6;
+}
+.searchBox{
+    flex-grow: 1;
+    /* margin-left: 10rem; */
+    /* margin-right: 18rem; */
+    border-radius: 15px;
+}
+.searchIcon{
+    margin-right: 1rem;
+    margin-top: .3rem;
+    display: none;
+}
+.key{
+    margin-left: 1rem;
+}
+.asideOpener div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    cursor: default;
+}
+.asideOpener{
+    display: none;
+}
+#forSearch{
+    display: none;
+}
+@media (max-width: 640px) {
+    /* .searchBox{
+        display: none;
+    }
+    .searchIcon{
+        display: block;
+    } */
+}
+.aside{
+    border: 1px solid;
+    width: 15rem;
+    height: 90vh;
+    background-color:hsl(220, 28%, 17%) ;
+    color: white;
+    border: none;
+    z-index: 10;
+    /* border: 1px solid; */
+}
+.tabs{
+    /* border: 1px solid; */
+    margin-top: .4rem;
+}
+.forPass{
+    border: 1px solid;
+    padding: .5rem;
+    border-bottom-right-radius: 34px;
+    border-top-right-radius: 34px;
+    display: flex;
+    background-color: cornflowerblue;
+    border: none;
+}
+.forPass p{
+    margin-left: 1.5rem;
+}
+.forPass div{
+    margin-left: .2rem;
+}
+.forCheckup{
+    border: 1px solid;
+    padding: .5rem;
+    border-bottom-right-radius: 34px;
+    border-top-right-radius: 34px;
+    display: flex;
+    border: none;
+
+}
+.forCheckup p{
+    margin-left: 2rem;
+}
+.forCheckup div{
+    margin-left: .2rem;
+}
+.forSetting{
+    border: 1px solid;
+    padding: .5rem;
+    border-bottom-right-radius: 34px;
+    border-top-right-radius: 34px;
+    display: flex;
+    border: none;
+
+}
+.forSetting p{
+    margin-left: 2rem;
+}
+.forSetting div{
+    margin-left: .2rem;
+}
+.passwordSection{
+    /* border: 1px solid; */
+    height: 90vh;
+    flex-grow: 1;
+}
+.checkUpSection{
+    border: 1px solid;
+    height: 94vh;
+    flex-grow: 1;
+    display: none;
+}
+.settingSection{
+    border: 1px solid;
+    height: 94vh;
+    flex-grow: 1;
+    display: none;
+}
+.bodyContainer{
+    display: flex;
+}
+.passwordHeader{
+    /* border: 1px solid; */
+    width: 40rem;
+    margin-left: 6rem;
+    height: 90vh;
+}
+.checkUpHeader{
+    border: 1px solid;
+    width: 40rem;
+    margin-left: 6rem;
+    height: 94vh;
+    
+}
+.settingHeader{
+    border: 1px solid;
+    width: 40rem;
+    margin-left: 6rem;
+    height: 94vh;
+}
+.threeLines{
+    margin-left: .5rem;
+}
+@media (max-width: 990px) {
+    .aside{
+        display: none;
+        position: fixed;
+    }
+    .searchInput{
+        display: none;
+    }
+    .bodyContainer{
+        display: block;
+    }
+    .passwordSection{
+        flex-grow: 0;
+    }
+    .checkUpSection{
+        flex-grow: 0;
+    }
+    .settingSection{
+        flex-grow: 0;
+    }
+    .passwordHeader{
+        width: 100%;
+        margin-left: 0;
+    }
+    .checkUpHeader{
+        width: 100%;
+        margin-left: 0;
+    }
+    .settingHeader{
+        width: 100%;
+        margin-left: 0;
+    }
+    .asideOpener{
+        display: block;
+    }
+    .searchIcon{
+        display: block;
+    }
+}
+#forAside{
+    display: none;
+}
+.addOn{
+    /* border: 1px solid; */
+    display: flex;
+    margin-top: .5rem;
+}
+.addOn p{
+    font-size: 1.5rem;
+    flex-grow: 1;
+    color: aliceblue;
+}
+.goBack {
+    font-size: 1.5rem;
+    flex-grow: 1;
+    color: aliceblue;
+    cursor: default;
+    display: none;
+}
+.seeSiteNameHere{
+    font-size: 1.5rem;
+    color: aliceblue;
+    display: none;
+}
+.addOn label{
+    font-size: 1.2rem;
+    background-color: #87CEEB;
+    color: #2C2C2C;
+    padding-right: .8rem;
+    padding-left: .8rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+    border-radius: 15px;
+}
+.addOn label:hover{
+    background-color:#4b5563;
+    color: white;
+}
+.checkOn{
+    /* border: 1px solid; */
+    display: flex;
+    margin-top: .5rem;
+}
+.checkOn p{
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+.setOn{
+    /* border: 1px solid; */
+    display: flex;
+    margin-top: .5rem;
+}
+.setOn p{
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+.passThought{
+    font-family: Bell Mt;
+    font-size: 1rem;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+.passwordHeader hr{
+    border: 1px solid;
+    opacity: .2;
+    margin-bottom: .5rem;
+}
+.createPassword{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    /* background-color:#313b4b; */
+    color: aliceblue;
+    display: none;
+    z-index: 10;
+   
+}
+.createPassword input{
+    padding: .5rem;
+    background-color:#313b4b;
+}
+.creatingTitle{
+    /* border: 1px solid; */
+    padding: .5rem;
+}
+.site{
+    padding-left: .5rem;
+    padding-bottom: .2rem;
+}
+.siteInput{
+    padding: .4rem;
+    width: 92%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    background-color: #4b5563;
+    color: aliceblue;
+
+}
+.siteInput::placeholder{
+    color: aliceblue;
+}
+.username{
+    padding-left: .5rem;
+    padding-bottom: .2rem;
+    margin-top: .5rem;
+}
+.userInput{
+    padding: .4rem;
+    width: 92%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    background-color: #4b5563;
+    color: aliceblue;
+}
+.userInput::placeholder{
+    color: aliceblue;
+}
+.password{
+    padding-left: .5rem;
+    padding-bottom: .2rem;
+    margin-top: .5rem;
+}
+.passwordInput{
+    padding: .4rem;
+    width: 92%;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    outline: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    background-color: #4b5563;
+    color: aliceblue;
+}
+.passwordInput::placeholder{
+    color: aliceblue;
+}
+.note{
+    margin-left: .5rem;
+    margin-bottom: .2rem;
+}
+#savingNote{
+    margin-left: .5rem;
+    width: 95%;
+    outline: none;
+    color: aliceblue;
+    font-family: sans-serif;
+    background-color:#313b4b;
+}
+.buttonsHolder{
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: right;
+    
+}
+.createCancel{
+    padding: .3rem;
+    margin-right: 1rem;
+    border: 1px solid;
+    margin-bottom: .5rem;
+    cursor: pointer;
+    width: 3rem;
+    text-align: center;
+    border-radius: 15px;
+    color:powderblue;
+    font: 600;
+}
+.createCancel:hover{
+    background-color: #4b5563;
+}
+.createSave, .seeSaveEdit{
+    padding: .3rem;
+    margin-right: 1rem;
+    border: 1px solid;
+    margin-bottom: .5rem;
+    cursor: default;
+    width: 3rem;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    background-color: #87CEEB; 
+    opacity: 0.5; 
+    color: #2C2C2C
+
+}
+.seeSaveEdit{
+    opacity: 1;
+    display: none;
+}
+.saveHover:hover, .seeSaveEdit:hover{
+    background-color: #4b5563;
+    color: aliceblue;
+    cursor: pointer;
+}
+.saveHover:active, .seeSaveEdit:active{
+    color: cornflowerblue;
+}
+.addPass{
+    color: cornflowerblue;
+    font: bolder;
+    font-family: monospace;
+    
+}
+.addPass:hover{
+    background-color: #4b5563;
+}
+#forCreatePassword{
+    display: none;
+}
+.allPasswordParent{
+    color: aliceblue;
+    margin-top: 2rem;
+    /* border: 1px solid; */
+    height: 80vh ;
+    overflow-y: auto;
+    display: block;
+
+}
+.allPasswordParent::-webkit-scrollbar { 
+    width: 2px; 
+    height: 10px; 
+} 
+.allPasswordParent::-webkit-scrollbar-track { 
+    background: #313b4b; 
+    border-radius: 5px; 
+} 
+.allPasswordParent::-webkit-scrollbar-thumb { 
+    background: #1a72ad; 
+    border-radius: 10px; 
+} 
+.allPasswordParent::-webkit-scrollbar-thumb:hover { 
+    background: #00458b; 
+} 
+.passwordTemplate{
+    display: flex;
+    padding-right: 1rem;
+    padding: .6rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+.passColor{
+    background-color:#1f2937;
+    border-radius: 5px;
+
+}
+.passColor:hover{
+    background-color:#313b4b;
+}
+.siteNameAndIcon{
+    display: flex;
+    flex-grow: 1;
+    padding: .5rem;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.siteName{
+    margin-left: .5rem;
+}
+.allPasswordParent hr{
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.seeForPassword{
+    border: 1px solid;
+    
+}
+.seePasswordTemplate{
+    /* border: 1px solid; */
+    color: aliceblue;
+    margin-top: 2rem;
+}
+.seeForPasswordParent{
+    border-radius: 5px;
+    background-color: #1f2937;
+    display: none;
+}
+.templatePart1{
+    display: flex;
+    width: 100%;
+
+}
+.templatePart1 div{
+    width: 93%;
+}
+.templatePart2{
+    display: flex;
+}
+.templatePart2 div{
+    width: 93%;
+    display: block;
+    /* border: 1px solid; */
+}
+.seeNote{
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+.noteSee{
+    margin-top: .3rem;
+    margin-left: .5rem;
+    margin-bottom: 2rem;
+    background-color:#4b5563;
+    opacity: .5;
+    border-radius: 5px;
+}
+.noteSee p{
+    padding: .5rem;
+}
+.seeUserName{
+    margin-top: 1rem;
+    margin-left: .8rem;
+
+}
+.nameUserSee{
+    margin-top: .3rem;
+    margin-left: .8rem;
+    border-radius: 5px;
+    background-color: #4b5563;
+    display: flex;
+}
+.nameUserSee p{
+    padding: .5rem;
+    padding-right: 0;
+    opacity: .5;
+    flex-grow: 1;
+}
+.nameUserSee div{
+    width: fit-content;
+    text-align: center;
+    margin-top: .2rem;
+    margin-right: .2rem;
+}
+.seeSiteName{
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+.nameSiteSee{
+    margin-top: .3rem;
+    margin-left: .5rem;
+    opacity: .9;
+    text-decoration: underline;
+}
+.seePassword{
+    margin-top: 1rem;
+    margin-left: .8rem;
+    
+}
+.passwordSee{
+    margin-top: .3rem;
+    margin-left: .8rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    background-color: #4b5563;
+}
+.passwordSee p{
+    padding: .5rem;
+    padding-right: 0;
+    opacity: .5;
+    flex-grow: 1;
+}
+.passwordSee div{
+    width: 100%;
+    display: flex;
+}
+.passwordSee b{
+    margin-top: .2rem;
+    margin-right: .2rem;
+}
+.seeOperation{
+    /* border: 1px solid; */
+}
+.operationParent{
+    display: flex;
+    padding: 1rem;
+}
+.operationPart1{
+    /* border: 1px solid; */
+    display: flex;
+
+}
+.operationPart2{
+    /* border: 1px solid; */
+    flex-grow: 1;
+}
+.seeEdit{
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    border-radius: 15px;
+    margin-left: .5rem;
+    color: #2C2C2C;
+    background-color: #87CEEB;
+    
+}
+.seeEdit:hover{
+    background-color:#4b5563;
+    color: white;
+}
+.seeDelete{
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    border-radius: 15px;
+    margin-left: .5rem;
+    color: #2C2C2C;
+    background-color: #87CEEB;
+}
+.seeDelete:hover{
+    background-color:#4b5563;
+    color: white;
+}
+.seeShare{
+    cursor: pointer;
+    width: fit-content;
+    margin-left: 86%;
+    padding-left: 1rem;    
+    padding-right: 1rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    border-radius: 15px;
+    color: #2C2C2C;
+    background-color:#87CEEB;
+}
+.seeShare:hover{
+    background-color:#4b5563;
+    color: white;
+}
+@media (max-width: 670px) {
+    .seeShare{
+        margin-left: 80%;
+    }
+}
+@media (max-width: 517px) {
+    .seeShare{
+        margin-left: 75%;
+    }
+}
+@media (max-width: 486px) {
+    .seeShare{
+        margin-left: 70%;
+    }
+}
+@media (max-width: 423px) {
+    .seeShare{
+        margin-left: 60%;
+    }
+}
+@media (max-width: 360px) {
+    .seeShare{
+        margin-left: 40%;
+    }
+}
+#siteHref{
+    color: aliceblue;
+}
+#settingState{
+    display: none;
+}
+#checkupState{
+    display: none;
+}
+#passwordState{
+    display: none;
+}
+.copy_username, .copy_password{
+    cursor: default;
+}
+.responseHandler{
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.handleMessage{
+    text-align: center;
+    width: 50%;
+    margin-left: 22%;
+    padding: .4rem;
+    background-color: #006400;
+    border-radius: 5px;
+    color: aliceblue;
+    animation: fadeIn .5s ease;
+    display: none;
+    
+}
+@keyframes fadeIn {
+    from{transform: translateY(-0%);}
+    to{transform: translateY(-100%);}
+}
+.taaHoga{
+    background-color: red;
+    display: none;
+}
+.coverBody{
+    width: 28rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    background-color:#1f2937;
+    display: block;
+    margin: auto;
+    box-sizing: border-box;
+    /* box-shadow: cornflowerblue 2px -2px 20px 6px; */
+
+}
+@media (max-width: 500px) {
+    .coverBody{
+        width: 24rem;
+    }
+}
+@media (max-width: 390px) {
+    .coverBody{
+        width: 20rem;
+    }
+}
+@media (max-width: 320px){
+    .coverBody{
+        width: 16rem;
+    }
+}
+.createPassword{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+.rightSymbol{
+    opacity: .6;
+}
+.see_username{
+    background-color: #313b4b;
+}
+.see_password{
+    background-color: #313b4b;
+}

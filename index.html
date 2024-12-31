@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password manager</title>
+    <link rel="stylesheet" href="CSS_Files/index.css">
+    <script src="JS_Files/index.js" type="module"></script>
+    <script src="JS_Files/longFunctions.js" type="module"></script>
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS_Files/checkup.css">
+    <script src="JS_Files/checkup.js" type="module"></script>
+    <link rel="stylesheet" href="CSS_Files/setting.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="webname">
+            <input checked type="checkbox" id="forAside">
+            <div class="asideOpener">
+                <label for="forAside" class="threeLines">🔀</label>
+            </div>
+            <div class="key">🔑</div>
+            <div class="appName">Password Manager</div>
+        </div>
+        <div class="searchContainer">
+
+            <div class="searchBox">
+                <input class="searchInput" type="search" placeholder="search for password">
+            </div>
+        </div>
+        <input type="checkbox" checked id="forSearch">
+        <label for="forSearch" class="searchIcon">🔍</label>
+    </header>
+    <main>
+        <section class="bodyContainer">
+            <aside class="aside">
+                <div class="tabs">
+                    <input checked type="checkbox" id="settingState">
+                    <input checked type="checkbox" id="checkupState">
+                    <input checked type="checkbox" id="passwordState">
+                    <label for="passwordState" class="forPass">
+                        <div>📝</div>
+                        <p>Password</p>
+                    </label>
+                    <label for="checkupState" class="forCheckup">
+                        <div>✔</div>
+                        <p>Checkup</p>
+                    </label>
+                    <label id="debug" for="settingState" class="forSetting">
+                        <div>⨁</div>
+                        <p>Settings</p>
+                    </label>
+                </div>
+            </aside>
+            <section class="passwordSection">
+                <div class="passwordHeader">
+                    <div class="addOn">
+                        <div class="seeSiteNameHere">https://www.google.com</div>
+                        <p class="seeHidePassword">Passwords</p>
+                        <div class="goBack"><b>⬅</b> Go Back</div>
+                        <input checked type="checkbox" id="forCreatePassword">
+                        <label for="forCreatePassword" class="addPass">Add</label>
+
+                    </div>
+                    <div class="createPassword">
+                        <div class="coverBody">
+                            <div class="creatingTitle">
+                                Add new password
+                            </div>
+                            <div>
+                                <div class="site">Site *</div>
+                                <div>
+                                    <input class="siteInput" type="text" placeholder="example.com">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="username">Username *</div>
+                                <div>
+                                    <input class="userInput" type="text">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="password">Password *</div>
+                                <div>
+                                    <input class="passwordInput" type="password">
+                                </div>
+                            </div>
+                            <p class="makeSureThought"></p>
+                            <hr class="">
+                            <div>
+                                <div class="note">Note (optional)</div>
+                                <div>
+                                    <textarea placeholder="no note added" cols="4" rows="4" name="note"
+                                        id="savingNote"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="buttonsHolder">
+                                <div class="createCancel">Cancel</div>
+                                <div id="createSave" class="createSave">Save</div>
+                                <div id="seeSaveEdit" class="seeSaveEdit">Update</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- creating password template is started -->
+                    <div class="allPasswordParent"></div>
+                    <div class="responseHandler">
+                        <p class="handleMessage"></p>
+                    </div>
+                    <!-- creating password template is ended -->
+                    <!-- see for password creation is started -->
+                    <div class="seeForPasswordParent">
+                        <div class="seePasswordTemplate">
+                            <div class="templatePart1">
+                                <div>
+                                    <div class="seeUserName">Username</div>
+                                    <div class="nameUserSee">
+                                        <p class="see_username">No username added</p>
+                                        <div class="copy_username" title="Copy this Username">📝</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="seeSiteName">Sites</div>
+                                    <div class="nameSiteSee"><a id="siteHref" href="">no link to redirect</a></div>
+                                </div>
+                            </div>
+                            <div class="templatePart2">
+                                <div>
+                                    <div class="seePassword">Password</div>
+                                    <div class="passwordSee">
+                                        <div>
+                                            <p class="see_password">No password added</p>
+                                            <b class="copy_password" title="Copy this password">📝</b>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="seeNote">Note</div>
+                                    <div class="noteSee">
+                                        <p class="see_note">how can i help you today
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="seeNextHR">
+                            <div class="seeOperation">
+                                <div class="operationParent">
+                                    <div class="operationPart1">
+                                        <p class="seeEdit">Edit</p>
+                                        <p class="seeDelete" title="Parmanently deleted">Delete</p>
+                                    </div>
+                                    <div class="operationPart2">
+                                        <p class="seeShare">Share</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- see for password section is ended -->
+
+
+                </div>
+            </section>
+
+            <section class="checkUpSection">
+                <div class="checkUpHeader">
+                    <div class="checkUpContainer">
+                    <div class="checkOn">
+                        <p>Password Checkup</p>
+                    </div>
+                    <div class="imgContainer">
+                        <div class="checkImg">
+                            📝
+                        </div>
+                    </div>
+                    <div class="checkChecking">
+                        <div class="checkLoader"></div>
+                        <div class="checkStatus">
+                            <p class="checkChecked">Checked 2 password</p>
+                            <p class="checkAgo">6 minutes ago</p>
+                        </div>
+                        <div class="checkAgain">🔃</div>
+                        <div class="checkAgainBtn">Check again</div>
+                    </div>
+
+                    <div class="checkUnique passColor">
+                        <div class="checkSymbolU">🔴</div>
+                        <div class="checkResultU">
+                            <p class="reusedCount">0 reused password</p>
+                            <p class="reusedText">Create unique password</p>
+                        </div>
+                        <div class="checkUniqueSee">▶</div>
+                    </div>
+                    
+                    <div class="checkWeak passColor">
+                        <div class="checkSymbolW">🔴</div>
+                        <div class="checkResultW">
+                            <p class="weakCount">0 weak password</p>
+                            <p class="weakCountText">Create strong password</p>
+                        </div>
+                        <div class="checkWeakSee">▶</div>
+                    </div>
+                    </div>
+                    
+                    <!-- Starting of checkUniqueSee page creation -->
+                    
+                    
+                    <div class="checkUniqueSeeHeader">
+                        <div class="checkUniqueBack">
+                            <div class="goBackUnique"><b>⬅</b> <p class="uniqueCount"></p></div>
+                        </div>
+                        <div class="checkThoughtContainerU">
+                            <p class="thougth1">Create unique passwords</p>
+                            <p class="thougth2">Use a unique password for every site or app. If someone discovers a reused password, it can be used to access your other accounts.</p>
+                            <p class="thougth3"></p>
+
+                        </div>
+                        <div class="checkUniqueTemplate">
+                            <!-- <div class="checkUniqueParent">
+                                <div class="checkUniqueSymbol">🏀</div>
+                                <div class="checkUniqueInfo">
+                                    <p class="webnameInfo">https://google.com</p>
+                                    <div class="userAndPassInfo">
+                                        <p class="userInfo">vinod</p>
+                                        <p class="passInfo">password</p>
+                                    </div>
+                                </div>
+                                <div class="changeBtnU">Change ⇗</div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Ending of checkUnique and starting checkWeakToo from here -->
+                    <div class="checkWeakSeeHeader">
+                        <div class="checkWeakBack">
+                            <div class="goBackWeak"><b>⬅</b> <p class="weakCountNearBack">2 weak passwords</p></div>
+                        </div>
+                        <div class="checkThoughtContainerW">
+                            <p class="thougth1w">Create strong passwords</p>
+                            <p class="thougth2w">Weak passwords are easy to guess. Make sure you're creating strong passwords.</p>
+
+                        </div>
+                        <div class="checkWeakTemplate">
+                            
+                            <!-- <div class="checkWeakParent">
+                                <div class="checkWeakSymbol">🏀</div>
+                                <div class="checkWeakInfo">
+                                    <p class="webnameInfow">https://google.com</p>
+                                    <div class="userAndPassInfow">
+                                        <p class="userInfow">vinod</p>
+                                        <p class="passInfow">password</p>
+                                    </div>
+                                </div>
+                                <div class="changeBtnw">Change ⇗</div>
+                            </div> -->
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </section>
+
+            <section class="settingSection">
+                <div class="settingHeader">
+                    <div class="setOn">
+                        <p>Settings</p>
+                    </div>
+                    <div class="noSay">
+                        <div class="settingLoader">20💛25</div>
+                    </div>
+                    <div class="lastday">This project is ended on Dec-31-2024</div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+.checkOn{
+    color: aliceblue;
+}
+.checkUpSection{
+    border: none;
+    color: aliceblue;
+    
+}
+.checkUpHeader{
+    border: none;
+}
+.imgContainer{
+    /* border: 1px solid ; */
+    height: fit-content;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: 1px solid #374151;
+}
+.checkImg{
+    /* border: 1px solid; */
+    font-size: 5rem;
+    text-align: center;
+    background-color:#1f2937;
+    padding: .5rem;
+    padding-bottom: .8rem;
+    
+}
+.checkChecking{
+    display: flex;
+    /* border: 1px solid; */
+    padding: .8rem;
+    background-color: #1f2937;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: 1px solid #374151;
+    cursor:default;
+
+}
+.checkStatus{
+    flex-grow: 1;
+    margin-left: .5rem;
+}
+.checkLoader{
+    border: 5px solid #f3f3f3; 
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: spin 1s linear infinite;
+    margin-top: .5rem;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: hidden;
+    display: none;
+}
+@keyframes spin {
+
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.checkAgain{
+    /* border: 1px solid; */
+    width: 5%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    background-color: #374151;
+    opacity: .5;
+    display: none;
+}
+.checkAgo{
+    font-weight:100;
+
+}
+.checkChecked{
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+.checkAgainBtn, .changeBtnU, .changeBtnw{
+    background-color: #87CEEB; 
+    border-radius: 15px;
+    margin-right: 1rem;
+    padding: .5rem;
+    color: #2C2C2C;
+    cursor: default;
+}
+.checkAgainBtn:hover, .changeBtnU:hover, .changeBtnw:hover{
+    background-color: #4b5563;
+    color: aliceblue;
+    cursor: pointer;
+}
+.checkAgainBtn:active, .changeBtnU:active, .changeBtnw:active{
+    color: cornflowerblue;
+}
+@media (max-width: 360px) {
+    .checkAgainBtn{
+        margin-right: 0;
+    }
+}
+.checkUnique, .checkWeak{
+    display: flex;
+    padding: .6rem;
+    border-radius: 0px;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: 1px solid #374151;
+    cursor: pointer;
+}
+.checkSymbolU, .checkSymbolW{
+    margin-right: .5rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+.checkResultU, .checkResultW{
+    flex-grow: 1;
+    margin-left: .4rem;
+}
+.checkWeakSee, .checkUniqueSee{
+    margin-top: .4rem;
+    opacity: .5;
+}
+.checkWeakSee:hover, .checkUniqueSee:hover{
+    opacity: 1;
+}
+.goBackUnique, .goBackWeak{
+    font-size: 1.2rem;
+    flex-grow: 1;
+    color: aliceblue;
+    cursor: default;
+    display: flex;
+}
+.goBackUnique b, .goBackWeak b{
+    font-size: 1.5rem;
+}
+.goBackUnique p, .goBackWeak p{
+    margin-top: .5rem;
+    margin-left: .8rem;
+}
+.thougth1, .thougth1w{
+    margin-top: 1.5rem;
+    color: white;
+    margin-left: .5rem;
+}
+.thougth2, .thougth2w{
+    margin-top: .8rem;
+    margin-left: .5rem;
+}
+.thougth3, .thougth3w{
+    margin-top: 1.3rem;
+    margin-left: .5rem;
+}
+.checkUniqueParent, .checkWeakParent{
+    display: flex;
+    border: 1px solid;
+    padding: .3rem;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: #374151 1px solid;
+    margin-top: .3rem;
+}
+.userAndPassInfo, .userAndPassInfow{
+    display: flex;
+}
+.checkUniqueInfo, .checkWeakInfo{
+    flex-grow: 1;
+    margin-left: .8rem;
+}
+.userInfo, .userInfow{
+    margin-right: .6rem;
+}
+.checkUniqueSymbol, .checkWeakSymbol{
+    margin-left: .5rem;
+    margin-top: .4rem;
+}
+.checkUniqueTemplate, .checkWeakTemplate{
+    height: 76vh;
+    overflow-y: auto;
+}
+.checkUniqueTemplate::-webkit-scrollbar , .checkWeakTemplate::-webkit-scrollbar{ 
+    width: 2px; 
+    height: 10px; 
+} 
+.checkUniqueTemplate::-webkit-scrollbar-track, .checkWeakTemplate::-webkit-scrollbar-track { 
+    background: #313b4b; 
+    border-radius: 5px; 
+} 
+.checkUniqueTemplate::-webkit-scrollbar-thumb, .checkWeakTemplate::-webkit-scrollbar-thumb { 
+    background: #1a72ad; 
+    border-radius: 10px; 
+} 
+.checkUniqueTemplate::-webkit-scrollbar-thumb:hover, .checkWeakTemplate::-webkit-scrollbar-thumb:hover { 
+    background: #00458b; 
+} 
+.checkUniqueSeeHeader{
+    display: none;
+}
+.checkWeakSeeHeader{
+    display: none;
+}
+.checkUpContainer{
+    display: block;
+}

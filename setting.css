@@ -1,0 +1,43 @@
+ .settingSection{
+    border: none;
+    color: aliceblue;
+ }
+ .settingHeader{
+    border: none;
+ }
+ .noSay{
+    margin-top: 30%;
+    text-align: center;
+    font-size: 2rem;
+ }
+ .settingLoader{
+    border: 5px solid #f3f3f3;
+    border-top: 11px solid #3498db;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spinn .1s linear infinite, background-color 50s linear infinite;
+    margin-top: .5rem;
+    margin-left: 30%;
+    border-right: hidden;
+    border-left: hidden;
+    border-bottom: hidden;
+    transition: background-color 50s;
+    background-color: blue;
+}
+ @keyframes spinn {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+@keyframes background-color {
+    0%{background-color: yellow;}
+    30%{background-color: red;}
+    60%{background-color: aliceblue;}
+    90%{background-color: green;}
+}
+.lastday{
+    font-family: Microsoft PhagsPa;
+    font-size: medium;
+    text-align: center;
+    margin-top: 20%;
+}

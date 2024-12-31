@@ -1,2 +1,10 @@
-# password-manager-based-on-google-password-manager
-Logic of this project is copied from google password manager but not exactly same as GPM, for learning purpose i have created this project and by grace of god i have learned a lot new things from this project.
+** JS Project 2 **
+Project Name - Password manager
+Inspiration - Google Password Manager
+Creation Date - Dec-15-2024
+Project Duration - 15 Days
+Purpose - Learning mongodb, perform CRUD operations
+
+
+*** Dec-31-2024 Project ended from my end while working on this project i have faced so many challenges from mongodb i accepted all of them and successfully finished learning mongodb i,m not saying that i learned all fundamentals of mongodb but yes i got overview of mongodb now i can say that i,m ready for move up ***                         
+                                                                                -neeltara098
